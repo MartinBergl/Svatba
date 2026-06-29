@@ -170,6 +170,13 @@ a{color:var(--wine)}
 .story p:last-child{margin-bottom:0}
 .signoff{font-family:var(--display);font-style:italic;font-size:1.4rem;color:var(--wine);margin-top:.6em}
 
+/* mobil: fotka na střed, text pod ní a vycentrovaný (desktop beze změny) */
+@media (max-width:760px){
+  .story-grid{grid-template-columns:1fr;gap:30px}
+  .story-photo{width:100%;max-width:300px;margin-inline:auto}
+  .story-grid > div:not(.story-photo){text-align:center}
+}
+
 /* ============================================================
    GALERIE — „Zeď vzpomínek"
    ============================================================ */
